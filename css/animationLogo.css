@@ -1,4 +1,25 @@
 img {
-    width: 25rem;
-    background-color: transparent;
+    width: 20rem;
+    height: 20rem;
+}
+
+img:hover {
+    animation-name: githubLogoAnime;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes githubLogoAnime {
+    25%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    75%{
+        transform: translateY(80px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
 }
